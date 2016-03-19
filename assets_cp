@@ -1,0 +1,16 @@
+# !/bin/bash
+
+cp /Users/johnkaufmann/Documents/AngSpress-Seed/app/images/Wysocki_Leigh_Resume.docx /Users/johnkaufmann/Documents/AngSpress-Seed/dist/images
+cp -R /Users/johnkaufmann/Documents/AngSpress-Seed/bower_components/font-awesome /Users/johnkaufmann/Documents/AngSpress-Seed/dist/bower_components
+
+ECHO "done"
+ECHO "commiting to git"
+
+git add /Users/johnkaufmann/Documents/AngSpress-Seed/dist/bower_components/font-awesome
+git add /Users/johnkaufmann/Documents/AngSpress-Seed/dist/images/Wysocki_Leigh_Resume.docx
+
+ECHO "added files staging for commit"
+
+git commit -m "adding resume to images and font-awesome to the distribution build (script)"
+
+ECHO "done"
